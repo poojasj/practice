@@ -6,9 +6,17 @@ authors = ["Pooja Jadhav <poojajadhavpune@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+pydantic = "^1.8.2"
+
+
+
+[tool.poetry.scripts]
+hello = 'practice.hello_world:say_hello'
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+black = "^22.3"
+isort = "^5.6.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
