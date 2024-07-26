@@ -20,3 +20,8 @@ poetry run hello
 ```
 poetry run black practice tests && poetry run isort practice tests
 ```
+
+## Testing
+```
+poetry run pytest tests
+```
