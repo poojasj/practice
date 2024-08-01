@@ -2,6 +2,6 @@ from practice.singleton import Singleton
 
 
 def test_singleton():
-    first = Singleton.get_instance()
-    second = Singleton.get_instance()
+    first = Singleton()
+    second = Singleton()
     assert first is second
