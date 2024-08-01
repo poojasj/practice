@@ -30,7 +30,7 @@ jobs:
         poetry install
     - name: Lint with black
       run: |
-        poetry run black --check-only practice tests && poetry run isort --check-only practice tests
+        poetry run black --check practice tests && poetry run isort --check-only practice tests
     - name: Test with pytest
       run: |
         poetry run pytest tests
